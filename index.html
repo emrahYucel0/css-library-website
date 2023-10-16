@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website Design</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/98ccaafe27.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="./index.html"><img src="./assets/İSTANBUL.png" alt="library logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">LIBRARIES</a></li>
+                        <li><a href="">EVENTS</a></li>
+                        <li><a href="">LIVING SPACES</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><input type="text" placeholder="Search.."></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>İSTANBUL PUBLIC LIBRARY</h1>
+        <P>For research, inspiration and enjoyment</P>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+    </section>
+
+<!----- JavaScript for Toggle Menu ----->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-190px";
+    }
+</script>   
+
+</body>
+</html>
