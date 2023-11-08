@@ -4,10 +4,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(2, 78, 21, 0.502),rgba(2, 111, 18, 0.532)), url(./assets/library-2507902_1280.jpg);
+    background-image: linear-gradient(rgba(2, 78, 48, 0.502),rgba(2, 56, 10, 0.532)), url(./assets/library-2507902_1280.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -18,6 +22,7 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 0.1px solid rgb(0, 0, 0, 0.3);
 }
 
 nav img {
@@ -104,7 +109,7 @@ nav .fa {
 
 @media(max-width: 700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 42px;
     }
 
     .nav-links ul li {
@@ -134,3 +139,222 @@ nav .fa {
         padding: 10px;
     }
 }
+
+/*----- Libraries -----*/
+
+    .row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p {
+        padding: 10px;
+        color: black;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h2 {
+        font-size: 62px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .libraries, .living-species {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        
+        
+    }
+
+    .libraries-col {
+        flex-basis: 20%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+
+    .libraries-col img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .libraries-col p {
+        padding: 0;
+        margin: 15px 0;
+        
+    }
+
+    .libraries-col h3 {
+        margin: 15px 0;
+        font-size: 23px;
+    }
+
+    #scrool-btn{
+        font-size: medium;
+        width: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        color: antiquewhite;
+        background-color: green;
+        display: none;
+        border-radius: 80%;
+        cursor: pointer;
+    }
+
+    @media(max-width:700px){
+        .row {
+            flex-direction: column;
+        }
+
+        .libraries-col {
+            border-bottom: 1px solid black ;
+        }
+
+        #scrool-btn {
+            width: 15px;
+            font-size: medium;
+            right:10px
+        }
+    }
+
+/*----- Living Species -----*/
+
+    .living-species-col {
+        width: 80%;
+        background: #fff3f3;
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+    .living-species-col h3 {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .living-species-col:hover {
+        box-shadow: 20px 20px 20px 0 rgba(13, 13, 13, 0.5);
+    }
+    
+/*----- Collections -----*/
+
+    .collections {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }   
+
+    .collections-col {
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .collections-col img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .layer {
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+
+    .layer:hover{
+        background: rgb(247, 183, 29, 0.7);
+
+    }
+
+    .layer h3 {
+        width: 100%;
+        font-weight: 500;
+        color: antiquewhite;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .layer:hover h3 {
+        bottom: 49%;
+        opacity: 1;
+    }
+
+/*----- Events -----*/
+
+    .events {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        
+    }
+
+    .events-col {
+        flex-basis: 44%;
+        border-radius: 10px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .events-column {
+        flex-basis: 44%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .events-col img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .events-column img {
+        width: 40%;
+        padding-right: 20px;
+        border-radius: 10px;
+        
+    }
+
+    .events-row {
+        display: flex;
+        flex-basis: 30%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    @media(max-width:800px){
+        .events-row {
+            flex-direction: column;
+        }
+
+        .events-column img {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
